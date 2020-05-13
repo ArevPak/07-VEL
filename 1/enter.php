@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Enter VC</title>
+  </head>
+  <body>
+    <div style="position: absolute; margin-top: 50px; width: 100vw">
+        <div style="padding-top: 570px;">
+          <h1 class="text-center col-12" style="">Почему выбирают нас</h1>
+        </div>
+        <div style="height: 700px; position: absolute; margin-top: 100px; width: 100vw" class="row">
+          <div class="col-4 mx-auto">
+            <h2 class="text-center">Большой <br> ассортимент</h2>
+            <img src="assort.png" class="w-100">
+          </div>
+          <div class="col-4 mx-auto">
+            <h2 class="text-center">Выгодная <br> цена</h2>
+            <img src="price.png" class="w-100">
+          </div>
+          <div class="col-4 mx-auto">
+            <h2 class="text-center">Надежность</h2>
+            <img src="deliv.png" class="w-100">
+          </div>
+          
+        </div>
+      </div>
+<!--Header-->
+    <div style="position: absolute; width: 100vw; height: 70px; background-color: #84243b" class="row">
+      <img src="logo.png" class="h-100">
+      
+      <button class="border-0" style="background-color: #84243b; margin-left: 10px; margin-top: 20px; height: 25px; padding-bottom: 30px;"><a href="aboutUs.html"><h4 class="px-2 text-light font-weight-light"> О нас</h4></a></button>
+      <button class="border-0" style="background-color: #84243b; margin-left: 10px; margin-top: 20px; height: 25px; padding-bottom: 30px;"><a href="adnim.php"><h4 class="px-2 text-light font-weight-light">Админпанель</h4></a></button>
+    </div>
+<!--Sale-->
+    <div class="row shadow-lg" style="position: absolute; background-image: url(ykt.jpg); background-size: 100%; height: 450px; width: 100vw; position: absolute; margin-top: 70px;">
+      <button class="btn" style="margin-left: 50px; height: 25px; padding-bottom: 30px; margin-top: 350px; margin-left: 250px;"><h2 class="px-2 text-light font-weight-normal" style="text-shadow:  0 0 1em black">Вход</h2></button>
+      <button class="btn rounded-pill" style="background-color: #84243b; margin-left: 50px; height: 25px; padding-bottom: 50px; margin-top: 350px; margin-left: 50px;"><h2 class="px-2 text-light font-weight-normal" style="text-shadow:  0 0 1em black">Регистрация</h2></button>
+      <div  style="position: absolute;"><!--Sale text-->
+        <h1 style="margin-top: 100px; margin-left: 660px; font-size: 55px;" class="font-weight-light text-right">Любые товары оптовых баз <br> и магазинов Якутска  <br> у Вас дома </h1><br>
+        <h4 style="text-align: right; margin-right: 70px; margin-top: 20px;"> Якутск - Аппаны</h4>
+      </div>
+    </div>
+
+<!--Why you?-->
+    
+<!--block-->
+    <div class="row">
+      <div class="col-sm"></div>
+      <div class="enter col-sm" style="display: none; position: absolute;  width: 100vw; height: 200vh; background: #e0e0e0; padding: 10px; opacity: 70%">
+        
+      </div>
+      <div class="col-sm"></div>
+    </div>
+<!--Form reg-->
+    <div style="position: relative; left: 500px; top: 20px; width: 20vw; height: 20vw;  background: #800000; color: #fff; display: none;" class="form">
+      <form class="container" name="vhod" method="GET" action="enter_form.php">
+          <input type="text" name="login" placeholder="Login" style="margin-top: 30px; width: 100%"><br>
+          <input type="text" name="password" placeholder="Password" style="margin-top: 30px; width: 100%"><br>
+          <button style="margin-top: 30px; width: 100%">Войти</button><br>
+          <a href="reg"><p class="text-center">Еще не зарегестрировались?</p></a>
+        </form>
+    </div>
+
+    <script>
+      let enter = document.querySelector('.enter');
+      let vhod = document.querySelector('.btn');
+      let form = document.querySelector('.form')
+
+      vhod.onclick = function(){
+        enter.style.display = "block";
+        //vhod.style.display = "none";
+        form.style.display = "block";
+        form.style.position = "fixed";
+      }
+      var KEY_ESC = 27;
+document.onkeydown = function(e) {
+    if (e.keyCode == KEY_ESC) {
+        enter.style.display = "none";
+        //vhod.style.display = "none";
+        form.style.display = "none";
+    }
+}
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
